@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasus Crafts | Premium Creative Craft & Stationery Hub</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Explore Jasus Crafts - Your premium creative partner for Button House, DIY craft materials, professional rubber seals, office stationery, mementos, DTP, and scanning services in Kulappully.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="three-canvas"></canvas>
+
+    <!-- Animated Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="neon-text-pink">JASUS</span> <span class="neon-text-yellow">CRAFTS</span>
+            </div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <p class="loader-status">INITIALIZING CREATIVE DIMENSION...</p>
+        </div>
+    </div>
+
+    <!-- Sticky Transparent Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bold">JASUS</span><span class="logo-light">CRAFTS</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#showcase" class="nav-link">Showcase</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="https://wa.me/918606342677" target="_blank" rel="noopener noreferrer" class="btn-neon-small">
+                        <span>CONNECT</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glow-pink">Jasus</span> <span class="glow-white">Crafts</span>
+            </h1>
+            <div class="hero-subtitle-container">
+                <span class="neon-divider"></span>
+                <p class="hero-subtitle">Button House • Craft Materials • Gifts • Printing • Stationery</p>
+                <span class="neon-divider"></span>
+            </div>
+            <p class="hero-description">
+                Enter a modern creative space where art, innovation, and quality come together. From luxury mementos and artistic materials to printing and office essentials, Jasus Crafts brings every creative idea to life.
+            </p>
+            <div class="hero-actions">
+                <a href="#showcase" class="btn-secondary">Explore Showcase</a>
+                <a href="https://wa.me/918606342677" target="_blank" rel="noopener noreferrer" class="btn-neon-pink">
+                    <svg class="icon-whatsapp" viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="currentColor" d="M12.031 2c-5.524 0-10 4.48-10 10 0 1.77.46 3.49 1.33 5.01L2 22l5.13-1.34c1.47.8 3.12 1.22 4.9 1.22 5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 1.62c4.62 0 8.38 3.76 8.38 8.38s-3.76 8.38-8.38 8.38c-1.63 0-3.19-.47-4.54-1.35l-.32-.2-3.37.88.9-3.28-.22-.35c-.96-1.53-1.47-3.31-1.47-5.16 0-4.62 3.76-8.38 8.38-8.38zm-3.83 5.48c-.2-.04-.41-.05-.6-.05-.33 0-.64.12-.87.35-.35.35-.7.83-.7 1.7 0 1.22.65 2.4 1.05 2.93.08.11 1.99 3.2 4.97 4.38.7.28 1.26.45 1.7.59.71.22 1.36.19 1.87.11.57-.08 1.76-.72 2-.1.42 2.37-1.12.87-2.31 1.22-3.23.11-.42-.32-.82-.69-1.07l-.98-.71c-.34-.25-.33-.24-.04-.58.29-.34 1.25-1.44 1.4-1.63.15-.19.22-.41.12-.6-.1-.19-.41-.75-.59-1.11-.17-.35-.36-.3-.5-.3h-.42c-.15 0-.39.06-.59.27-.2.22-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.57 2.41 3.81 3.38.53.23 1 .37 1.36.48.54.17 1.03.15 1.42.09.43-.07 1.33-.55 1.52-1.07.19-.52.19-.97.13-1.07-.06-.1-.21-.15-.45-.27z"/>
+                    </svg>
+                    WhatsApp Contact
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll to Discover</span>
+        </div>
+    </section>
+
+    <!-- Main Showcase Container -->
+    <main class="main-container">
+        
+        <!-- Showcase Heading -->
+        <div id="showcase" class="section-header-block">
+            <span class="category-tag">CREATIVE UNIVERSE</span>
+            <h2 class="section-main-title">Interactive Showcases</h2>
+            <div class="accent-line"></div>
+            <p class="section-main-subtitle">Explore our core specialized domains built with ultimate precision and creative excellence.</p>
+        </div>
+
+        <!-- Section 01: Mementos & Gifts -->
+        <section class="showcase-item">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">01</span>
+                    <h3 class="card-title neon-text-pink">MEMENTOS & GIFTS</h3>
+                    <p class="card-text">
+                        Celebrate achievements with gold-standard luxury awards, glass trophies, and custom personalized gifts. Our design team shapes elegant custom awards with dramatic lighting effects and premium engravings.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Crystal & Acrylic Laser Engraved Trophies</span></li>
+                        <li><span>Corporate Awards & Custom Mementos</span></li>
+                        <li><span>Personalized Wooden & Metallic Plaques</span></li>
+                        <li><span>Premium Gift Sets & Custom Engravings</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/mementos_gifts.jpg" alt="Luxury Trophies and Personalized Gifts" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 02: Button House -->
+        <section class="showcase-item reverse">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">02</span>
+                    <h3 class="card-title neon-text-yellow">BUTTON HOUSE</h3>
+                    <p class="card-text">
+                        Immerse yourself in a workspace of exquisite designer embellishments. We house a luxury selection of satin ribbons, holographic laces, decorative metallic buttons, and high-fashion sewing accessories. Perfect for boutique designers, custom craft makers, and textile artists.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Premium Ribbons & Trims</span></li>
+                        <li><span>Designer Decorative Buttons</span></li>
+                        <li><span>High-Fashion Laces & Borders</span></li>
+                        <li><span>Sewing Accessories & Notions</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/button_house.png?v=2" alt="Button House Premium Craft Ribbons and Buttons" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 03: Craft Materials -->
+        <section class="showcase-item">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">03</span>
+                    <h3 class="card-title neon-text-pink">CRAFT MATERIALS</h3>
+                    <p class="card-text">
+                        Unleash your DIY potential with our curated artistic supplies. From high-grade textured papers, neon origami sheets, precise cutting mats, to special glues and embellishments. Designed to fuel your imagination and elevate your handmade products.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Textured Design Papers & Cardstocks</span></li>
+                        <li><span>Holographic & Glitter Foils</span></li>
+                        <li><span>DIY Modeling Clay & Craft Elements</span></li>
+                        <li><span>Heavy-duty Craft Adhesives & Tools</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/craft_materials.png?v=2" alt="Colorful DIY and Creative Craft Materials" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 04: Art Making Items -->
+        <section class="showcase-item reverse">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">04</span>
+                    <h3 class="card-title neon-text-yellow">ART MAKING ITEMS</h3>
+                    <p class="card-text">
+                        A vibrant spectrum for visual artists. We offer professional-grade acrylics, watercolors, palettes, specialized sketching brushes, fine liners, and drawing inks. Every tool is curated to ensure rich pigment transfer and flawless strokes.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Artist-grade Acrylics & Watercolors</span></li>
+                        <li><span>Fine Art Brush Sets & Palette Knives</span></li>
+                        <li><span>Precision Sketching & Calligraphy Pens</span></li>
+                        <li><span>High-density Drawing Pads & Canvases</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/art_making_items.jpg" alt="Paints, Brushes and Sketch Pens for Art Making" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Services Header -->
+        <div id="services" class="section-header-block space-above">
+            <span class="category-tag">HIGH-TECH HUB</span>
+            <h2 class="section-main-title">Digital & Document Services</h2>
+            <div class="accent-line"></div>
+            <p class="section-main-subtitle">High-speed, high-resolution document processing and creative layouts using modern tech workspaces.</p>
+        </div>
+
+        <!-- Section 05: Photostat & Scanning -->
+        <section class="showcase-item">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">05</span>
+                    <h3 class="card-title neon-text-pink">PHOTOSTAT & SCANNING</h3>
+                    <p class="card-text">
+                        Fast, high-fidelity copying and ultra-resolution digitization services. We process bulk documents, multi-page PDFs, color printing, and high-speed scans using premium network machines with crisp clarity.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>High-Speed Bulk Photocopying</span></li>
+                        <li><span>Ultra-HD Cloud & USB Scanning</span></li>
+                        <li><span>Vibrant Color Document Printing</span></li>
+                        <li><span>Clean Edge-to-Edge Double Sided Copying</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/photostat_scanning.jpg" alt="Modern High-Speed Photostat and Scanning Service" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 06: Lamination -->
+        <section class="showcase-item reverse">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">06</span>
+                    <h3 class="card-title neon-text-yellow">LAMINATION</h3>
+                    <p class="card-text">
+                        Protect your important documents with premium, crystal-clear, bubbles-free lamination. We use high-grade thermal films that provide realistic glossy reflections, absolute water-resistance, and lifetime wear-and-tear protection.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Heavy-duty ID & Certificate Lamination</span></li>
+                        <li><span>Flexible Matte & High-Gloss Finishes</span></li>
+                        <li><span>Bubble-Free Thermal Seal Technology</span></li>
+                        <li><span>Long-term Moisture & Tear Protection</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/lamination.jpg" alt="Glossy Crystal-Clear Document Lamination" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 07: DTP -->
+        <section class="showcase-item">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">07</span>
+                    <h3 class="card-title neon-text-pink">DTP (DESKTOP PUBLISHING)</h3>
+                    <p class="card-text">
+                        Creative typesetting and modern graphic layouts. Our workstation specializes in magazines, wedding invites, custom brochures, business cards, corporate leaflets, and professional reports styled with premium modern typography.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Creative Brochure & Flyer Layouts</span></li>
+                        <li><span>Wedding & Event Invitation Cards</span></li>
+                        <li><span>Multi-page Booklet & Magazine Typesetting</span></li>
+                        <li><span>Custom Vector Illustration & Branding Files</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/dtp_publishing.png?v=2" alt="Desktop Publishing Graphic Workstation Setup" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Office Header -->
+        <div id="office" class="section-header-block space-above">
+            <span class="category-tag">CORPORATE SOLUTIONS</span>
+            <h2 class="section-main-title">Office & Business Supplies</h2>
+            <div class="accent-line"></div>
+            <p class="section-main-subtitle">Premium corporate stamping solutions and high-grade executive desk stationery.</p>
+        </div>
+
+        <!-- Section 08: Office Stationery Items -->
+        <section class="showcase-item reverse">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">08</span>
+                    <h3 class="card-title neon-text-yellow">OFFICE STATIONERY</h3>
+                    <p class="card-text">
+                        Organize your workspace with class. Our premium stationery range includes sleek executive notebooks, high-end gel pens, ergonomic files, folders, and essential desk organizers that integrate seamlessly into your corporate environment.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Premium Executive Notebooks</span></li>
+                        <li><span>Fine Writing Instruments & Gel Pens</span></li>
+                        <li><span>Document Organizers & Archival Files</span></li>
+                        <li><span>Essential Desk Organizer Systems</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/office_stationery.png?v=2" alt="Modern Premium Office Stationery Supplies" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 09: Rubber Seals -->
+        <section class="showcase-item">
+            <div class="showcase-grid">
+                <div class="showcase-info glass-card" data-tilt>
+                    <div class="glow-spot"></div>
+                    <span class="card-number">09</span>
+                    <h3 class="card-title neon-text-pink">RUBBER SEALS</h3>
+                    <p class="card-text">
+                        Professional, high-precision self-inking stamps and heavy-duty corporate seals. Tailored for corporate desks, offices, and academic institutions, ensuring clean, sharp, and permanent ink impressions every single time.
+                    </p>
+                    <ul class="card-features">
+                        <li><span>Self-Inking Pocket & Desk Stamps</span></li>
+                        <li><span>Custom Logo & Signature Seals</span></li>
+                        <li><span>Heavy-Duty Date Stamps</span></li>
+                        <li><span>Premium Grade Inks & Replacement Pads</span></li>
+                    </ul>
+                </div>
+                <div class="showcase-visual glass-card-visual">
+                    <img src="assets/rubber_seals.jpg" alt="Sleek Professional Office Rubber Stamps and Seals" loading="lazy">
+                    <div class="visual-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section space-above">
+            <div class="contact-container glass-card">
+                <div class="glow-spot-contact"></div>
+                <div class="contact-grid">
+                    
+                    <div class="contact-info-panel">
+                        <span class="category-tag">GET IN TOUCH</span>
+                        <h2 class="contact-title">Start Your Project</h2>
+                        <p class="contact-desc">Have a creative idea, bulk printing job, or custom corporate gift order? Reach out directly and let's craft something premium together.</p>
+                        
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <div class="detail-icon neon-glow-pink">
+                                    <!-- Map Pin Icon -->
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Address</h4>
+                                    <p>Opp Govt Press, Shoranur Road,<br>Kulappully, Kerala, India</p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon neon-glow-yellow">
+                                    <!-- Phone Icon -->
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+918606342677" class="hover-glow">+91 86063 42677</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-cta">
+                            <a href="https://wa.me/918606342677" target="_blank" rel="noopener noreferrer" class="btn-neon-pink full-width">
+                                <span>SEND A WHATSAPP MESSAGE</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-map-panel">
+                        <!-- Custom Styled Embedded Map -->
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.433299778235!2d76.26908127590861!3d10.930491989228414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d486d3d3a049%3A0xe104dc40d6c1c9e8!2sShoranur%20Road%2C%20Kulappully%2C%20Kerala!5e0!3m2!1sen!2sin!4v1716544000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Jasus Crafts Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="neon-text-pink">JASUS</span> <span class="neon-text-yellow">CRAFTS</span>
+                </a>
+                <p class="footer-tagline">“Your Creative Partner”</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1CRou6ogB3/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/jasuscrafts?utm_source=qr&igsh=dmRyNXhlYXc0cWM5" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://wa.me/918606342677" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 Jasus Crafts. All rights reserved. Designed for Futuristic Immersion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact WhatsApp Button -->
+    <a href="https://wa.me/918606342677" target="_blank" rel="noopener noreferrer" class="whatsapp-floating-btn" aria-label="Contact Jasus Crafts on WhatsApp">
+        <div class="pulse-ring"></div>
+        <svg viewBox="0 0 24 24" width="30" height="30">
+            <path fill="#fff" d="M12.031 2c-5.524 0-10 4.48-10 10 0 1.77.46 3.49 1.33 5.01L2 22l5.13-1.34c1.47.8 3.12 1.22 4.9 1.22 5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 1.62c4.62 0 8.38 3.76 8.38 8.38s-3.76 8.38-8.38 8.38c-1.63 0-3.19-.47-4.54-1.35l-.32-.2-3.37.88.9-3.28-.22-.35c-.96-1.53-1.47-3.31-1.47-5.16 0-4.62 3.76-8.38 8.38-8.38zm-3.83 5.48c-.2-.04-.41-.05-.6-.05-.33 0-.64.12-.87.35-.35.35-.7.83-.7 1.7 0 1.22.65 2.4 1.05 2.93.08.11 1.99 3.2 4.97 4.38.7.28 1.26.45 1.7.59.71.22 1.36.19 1.87.11.57-.08 1.76-.72 2-.1.42 2.37-1.12.87-2.31 1.22-3.23.11-.42-.32-.82-.69-1.07l-.98-.71c-.34-.25-.33-.24-.04-.58.29-.34 1.25-1.44 1.4-1.63.15-.19.22-.41.12-.6-.1-.19-.41-.75-.59-1.11-.17-.35-.36-.3-.5-.3h-.42c-.15 0-.39.06-.59.27-.2.22-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.57 2.41 3.81 3.38.53.23 1 .37 1.36.48.54.17 1.03.15 1.42.09.43-.07 1.33-.55 1.52-1.07.19-.52.19-.97.13-1.07-.06-.1-.21-.15-.45-.27z"/>
+        </svg>
+    </a>
+
+    <!-- Three.js Library CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="main.js"></script>
+</body>
+</html>
